@@ -41,5 +41,50 @@ bool verified = false;
 int x = 3;
 char y = 's';
 
-int myNumber = 19;
-std::cout << myNumber;
+// CONSTANT VARIABLES
+const int minutesPerHour = 60;
+// This is how to declare a constant variable
+
+// Creating integer Variables
+int length = 4;
+int width = 6;
+
+int area = length * width;
+
+cout << "Area of the rectangle is:" << area << "\n";
+
+// USER INPUT
+
+int x;
+cout << "Type a number: "; //
+cin >> x; // Gets user input
+cout << "Your number is: " << x;
+
+// For Strings we must import
+#include <string>
+
+string greeting = "Hello";
+cout << greeting;
+
+// AUTO KEYWORD
+auto y = True;
+// Auto means we don't have to strictly define and it does it for us
+// Auto only works if ew define, ie, auto x; doesn't work.
+//
+
+// Test Pratice
+
+#include <iostream>
+using namespace std;
+
+int main3() {
+    int studentID = 1337;
+    float score = 90.9;
+    char grade = "A";
+
+    cout << studentID;
+    cout << score;
+    cout << grade;
+
+    return 0;
+}
