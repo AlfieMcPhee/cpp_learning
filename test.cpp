@@ -80,11 +80,12 @@ using namespace std;
 int main3() {
     int studentID = 1337;
     float score = 90.9;
-    char grade = "A";
-
+    string grade = "A";
+    bool passed = true;
     cout << studentID;
     cout << score;
     cout << grade;
+    cout << passed;
 
     return 0;
 }
