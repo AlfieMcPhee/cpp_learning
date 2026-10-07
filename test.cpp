@@ -1,5 +1,6 @@
 // HELLO WORLD VIA C++
 
+#include <ios>
 #include <iostream> // Header file library for IO
 using namespace std; // Can use names for objects and variables within std libary
 
@@ -69,7 +70,7 @@ cout << greeting;
 // AUTO KEYWORD
 auto y = True;
 // Auto means we don't have to strictly define and it does it for us
-// Auto only works if ew define, ie, auto x; doesn't work.
+// Auto only works if we define our variable, ie, auto x; doesn't work.
 //
 
 // Test Pratice
@@ -89,3 +90,97 @@ int main3() {
 
     return 0;
 }
+
+// Logical Operators
+// && - And
+// || - Or
+// ! - Not
+
+// Shopping Price Program
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int itemPrice = 20;
+    int shippingCost = 10;
+    int sum = itemPrice + shippingCost;
+        cout << sum;
+        return 0;
+}
+
+// APPENDING STRINGS
+
+#include <strings>
+
+string firstName = "John";
+string lastName = "Doe";
+string fullName = firstName.append(lastName);
+cout << fullName;
+
+string txt = "ABCDEFGHIJKLMNOP"
+// We cn use the length function to see string length
+cout << "The length of your text string is:" << txt.length();
+
+
+// Access strings
+
+string myString = "Hello";
+cout << myString[0];
+// Outputs the 0 index, in this case H
+
+// If we wanted to output the last character of a string
+cout << myString[myStringth.length() -1];
+// This would output 0
+
+// Change string characters
+myString[0] = 'J'; // Single quote
+cout << myString
+// This would output Jello instead of hello
+
+// Also
+// // We can also use
+cout << myString.at(0);
+// This would give us the first character in this case
+
+// User input strings
+
+string fullName;
+cout << "Enter your full name";
+cin >> fullName;
+cout << "Your name is:" << fullName;
+
+// However if we entered John Doe, we'd only get John
+// So we use
+
+string fullName;
+cout << "Enter your full name:";
+getline(cin, fullName);
+cout << "Your name is:" << fullName
+//getline does it all for us, cin as first arg then string variable as another
+
+// C Style Strings
+string greeting1 = "Hello";
+char greeting2[] = "Hello"; // This is a C Style String
+
+// Practice Program
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string message = "Hello";
+    cout << message;
+    return 0;
+}
+
+//Bools
+// Self explanatory, to print out true and false for a variable
+bool isCodingFun = true;
+cout << boolalpha;
+cout << isCodingFun << "\n" // Outputs True
+// to stop boolalpha
+cout << noboolalpha;
+
+// Conditionals
