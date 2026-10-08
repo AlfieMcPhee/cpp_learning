@@ -184,3 +184,84 @@ cout << isCodingFun << "\n" // Outputs True
 cout << noboolalpha;
 
 // Conditionals
+
+if (condition) {
+    // Code to be executed if true
+}
+
+// For Example
+
+if ( 20 > 19) {
+    cout << "20 is greater than 18";
+}
+
+// Or
+int x = 20;
+int y = 18;
+
+if (x > y) {
+    cout << "x is greater than y";
+}
+
+// Using Bools
+
+bool isGreater x > y;
+if (isGreater) {
+    cout << "x is greater than y";
+}
+
+// ELSE STATEMENTS
+
+if (condition) {
+    // code if true
+} else {
+    // Code to be executed if condition is false
+}
+
+int time = 20;
+
+if (time < 18) {
+  cout << "Good day.";
+} else {
+  cout << "Good evening.";
+}
+
+// Outputs "Good evening."
+
+
+// Using bools with else
+int time = 20;
+
+bool isDay = time < 18;
+
+if (isDay) {
+  cout << "Good day.";
+} else {
+  cout << "Good evening.";
+}
+
+// Outputs "Good evening."
+
+
+// ELSE IF-S
+
+if (condition1) {
+  // block of code to be executed if condition1 is true
+} else if (condition2) {
+  // block of code to be executed if condition1 is false and condition2 is true
+} else {
+  // block of code to be executed if both conditions are false
+}
+
+
+
+// EXAMPLE
+int time = 16;
+
+if (time < 12) {
+  cout << "Good morning.";
+} else if (time < 18) {
+  cout << "Good day.";
+} else {
+  cout << "Good evening.";
+}
