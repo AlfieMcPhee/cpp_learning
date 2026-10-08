@@ -265,3 +265,42 @@ if (time < 12) {
 } else {
   cout << "Good evening.";
 }
+
+// Using Bools with ELSE IF
+int time = 16;
+
+bool isMorning = time < 12;
+bool isDay = time < 18;
+
+if (isMorning) {
+  cout << "Good morning.";
+} else if (isDay) {
+  cout << "Good day.";
+} else {
+  cout << "Good evening.";
+}
+
+//NESTED IFS
+if (condition1) {
+  // code to run if condition1 is true
+  if (condition2) {
+    // code to run if both condition1 and condition2 are true
+  }
+}
+
+// Real Life Example
+
+int age = 20;
+bool isCitizen = true;
+
+if (age >= 18) {
+  cout << "Old enough to vote.\n";
+
+  if (isCitizen) {
+    cout << "And you are a citizen, so you can vote!\n";
+  } else {
+    cout << "But you must be a citizen to vote.\n";
+  }
+} else {
+  cout << "Not old enough to vote.\n";
+}
